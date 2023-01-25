@@ -9,11 +9,11 @@ class Program
         int guess = -1;
 
         
-        
         while(guess != magicNumber)
         {
-            Console.Write("What is your guess? ");
-            guess = int.Parse(Console.ReadLine());
+            Console.Write("what is the magic number? ");
+            string userInput = Console.ReadLine();
+            guess = int.Parse(userInput);
             
             if (guess < magicNumber)
             {
